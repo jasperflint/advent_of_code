@@ -58,17 +58,17 @@ for i in range(3, len(data)+3, 3):
     a = str(data[i-3])
     b = str(data[i-2])
     c = str(data[i-1])
-    print(c)
+    # print(c)
     d = list(a.strip())
     e = list(b.strip())
     f = list(c.strip())
 
     g = list(set(d).intersection(e))
     h = list(set(g).intersection(f))
-    print(h)
+    # print(h)
     for i in list(h):
-        print(alpha_dict[f"{i}"])
+        # print(alpha_dict[f"{i}"])
         total_2 += alpha_dict[f"{i}"]
         break
 
-print(total_2)
+print("Total Part 2: ", total_2)
