@@ -1,5 +1,12 @@
-data1 = open("day_2_data", "r")
-data2 = open("day_2_data", "r")
+import os
+
+script_dir = os.path.dirname(__file__)
+day = "day_2_data"
+abs_path = os.path.join(script_dir, day)
+print(abs_path)
+
+data1 = open(abs_path, "r")
+data2 = open(abs_path, "r")
 
 def round_1(data1):
     print("round 1!")

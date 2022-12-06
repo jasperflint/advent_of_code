@@ -1,7 +1,12 @@
 import difflib
+import os
 
+script_dir = os.path.dirname(__file__)
+day = "day_3_data"
+abs_path = os.path.join(script_dir, day)
+print(abs_path)
 
-raw_data = open("day_3_data", "r")
+raw_data = open(abs_path, "r")
 data = []
 total = 0
 total_2 = 0
@@ -20,7 +25,7 @@ index = 1
 for i in alphabet_list:
     alpha_dict[i] = index
     index += 1
-print(alpha_dict)
+# print(alpha_dict)
 
 
 # print(data[0])
@@ -54,10 +59,10 @@ z = list(set(list(u.strip())).intersection(y))
 print(z)
 """
 
-for i in range(3, len(data)+3, 3):
-    a = str(data[i-3])
-    b = str(data[i-2])
-    c = str(data[i-1])
+for i in range(3, len(data) + 3, 3):
+    a = str(data[i - 3])
+    b = str(data[i - 2])
+    c = str(data[i - 1])
     # print(c)
     d = list(a.strip())
     e = list(b.strip())

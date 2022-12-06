@@ -1,5 +1,11 @@
+import os
 
-data = open("day_1_data", "r")
+script_dir = os.path.dirname(__file__)
+day = "day_1_data"
+abs_path = os.path.join(script_dir, day)
+print(abs_path)
+
+data = open(abs_path, "r")
 
 j = [0]
 index = 0
@@ -19,10 +25,8 @@ for i in data:
         index += 1
         j.append(0)
 
-print(max(j))
+print("Part 1: ", max(j))
 
 j.sort(reverse=True)
 
-print(j[0:3])
-
-print(sum(j[0:3]))
+print("Part 2: ", sum(j[0:3]))

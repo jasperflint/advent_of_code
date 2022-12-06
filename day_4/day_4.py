@@ -1,4 +1,11 @@
-raw_data = open("day_4_data", "r")
+import os
+
+script_dir = os.path.dirname(__file__)
+day = "day_4_data"
+abs_path = os.path.join(script_dir, day)
+print(abs_path)
+
+raw_data = open(abs_path, "r")
 data = []
 total = 0
 total_2 = 0
@@ -27,7 +34,7 @@ for i in data:
         total += 1
         # print(total)
 
-print("total 1: ", total)
+print("Part 1: ", total)
 
 for i in data:
     a = i.split(",")
@@ -45,4 +52,4 @@ for i in data:
         total_2 += 1
         # print(total_2)
 
-print("total 2: ", total_2)
+print("Part 2: ", total_2)
