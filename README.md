@@ -1,7 +1,7 @@
-# advent_of_code_2022
+# advent_of_code
 
-https://adventofcode.com/2022
+https://adventofcode.com/
 
-These are my attempts at this years advent of code. 
+These are my attempts at advent of code. 
 
-Bad python awaits ye who dare enter here. 
+Bad python awaits all ye who dare enter here. 
